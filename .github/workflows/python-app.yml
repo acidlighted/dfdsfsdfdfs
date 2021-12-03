@@ -24,4 +24,4 @@ jobs:
         pip install pytz
     - name: Run Main Script
       run: |
-         python working2.py
+         python dsfdsfds.py
