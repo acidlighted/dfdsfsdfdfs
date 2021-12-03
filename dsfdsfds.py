@@ -9,7 +9,7 @@ from datetime import datetime
 import time
 import pytz
 options = Options()
-options.headless = True
+options.headless = False
 driver = webdriver.Chrome(options=options, executable_path=r'asdfg.exe')
 i = 1
 driver.get( "https://cutt.ly/7QedHym")
@@ -26,7 +26,10 @@ while i <37:
     now = datetime.now(tz=tz)
     azxs = now.strftime("%I:%M %p")
     ghnj = now.strftime("%m/%d/%Y")
-    active = driver.find_element_by_xpath("//span[@class='bk bl bm']")
+    try:
+       active = driver.find_element_by_xpath("//span[@class='bk bl bm']")
+    except:
+        active = driver.find_element_by_css_selector("body > div.f:nth-child(1) > div#viewport > div#objects_container:nth-child(2) > div#root.e > div.bi:nth-child(1) > div:nth-child(1) > div.bj > span.bl.bm.bn:nth-child(2)")
     activetext = active.text
     print (active.text , end =" ")
     print("Current Time =", azxs, end =" ")
