@@ -1,4 +1,5 @@
 from selenium import webdriver
+import progressbar
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.utils import find_connectable_ip
@@ -33,15 +34,17 @@ while i <37:
     except:
         active = driver.find_element_by_css_selector("body > div.f:nth-child(1) > div#viewport > div#objects_container:nth-child(2) > div#root.e > div.bi:nth-child(1) > div:nth-child(1) > div.bj > span.bl.bm.bn:nth-child(2)")
     activetext = active.text
-    
+    print(colored("oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo","red"))
     print(colored (activetext, 'blue') , end =" ")
     print("Current Time =", azxs , end=" ")
     
     
     print("respond" ,end =" ")
-    print (i , end=" ")
+    print (i)
     i= i+1
-    time.sleep(50)
+    for p in progressbar.progressbar(range(100)):
+        time.sleep(0.6)
+    
     driver.get("https://cutt.ly/7QedHym")
     time.sleep(2)
 
