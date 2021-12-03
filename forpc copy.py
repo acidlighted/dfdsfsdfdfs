@@ -33,14 +33,13 @@ while i <37:
     except:
         active = driver.find_element_by_css_selector("body > div.f:nth-child(1) > div#viewport > div#objects_container:nth-child(2) > div#root.e > div.bi:nth-child(1) > div:nth-child(1) > div.bj > span.bl.bm.bn:nth-child(2)")
     activetext = active.text
-    print (colored('Start', 'green'),end=" ")
-    print (active.text , end =" ")
+    
+    print(colored (activetext, 'blue') , end =" ")
     print("Current Time =", azxs , end=" ")
     
     
     print("respond" ,end =" ")
     print (i , end=" ")
-    print(colored('End', 'red'))
     i= i+1
     time.sleep(50)
     driver.get("https://cutt.ly/7QedHym")
