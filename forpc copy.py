@@ -24,7 +24,7 @@ dsffd = driver.find_element_by_name("pass")
 dsffd.send_keys("asdewq")
 rrttt = driver.find_element_by_name("login")
 rrttt.click()
-while i <37:
+while i <10000:
     tz = pytz.timezone ("Asia/Dhaka")
     now = datetime.now(tz=tz)
     azxs = now.strftime("%I:%M %p")
@@ -43,10 +43,7 @@ while i <37:
     print (i)
     i= i+1
     for p in progressbar.progressbar(range(100)):
-        time.sleep(0.6)
+        time.sleep(0.2)
     
     driver.get("https://cutt.ly/7QedHym")
     time.sleep(2)
-
-   
-
