@@ -9,7 +9,7 @@ from datetime import datetime
 import time
 import pytz
 options = Options()
-options.headless = True
+options.headless = False
 driver = webdriver.Chrome(options=options, executable_path=r'asdfg.exe')
 i = 1
 driver.get( "https://cutt.ly/7QedHym")

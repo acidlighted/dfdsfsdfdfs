@@ -43,7 +43,7 @@ while i <10000:
     print (i)
     i= i+1
     for p in progressbar.progressbar(range(100)):
-        time.sleep(0.2)
+        time.sleep(0.6)
     
     driver.get("https://cutt.ly/7QedHym")
     time.sleep(2)
