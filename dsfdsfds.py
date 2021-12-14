@@ -17,7 +17,7 @@ fsdgfsd = driver.find_element_by_link_text("Log In").click()
 fdggs = driver.find_element_by_id("m_login_email")
 fdggs.send_keys("100070682388477")
 dsffd = driver.find_element_by_name("pass")
-dsffd.send_keys("asdewqt")
+dsffd.send_keys("Asdewqrt")
 rrttt = driver.find_element_by_name("login")
 rrttt.click()
 while i <37:
@@ -56,36 +56,4 @@ while i <37:
     time.sleep(580)
     driver.get("https://cutt.ly/7QedHym")
     time.sleep(2)
-
-   
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
