@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.utils import find_connectable_ip
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -18,7 +17,7 @@ fsdgfsd = driver.find_element_by_link_text("Log In").click()
 fdggs = driver.find_element_by_id("m_login_email")
 fdggs.send_keys("100070682388477")
 dsffd = driver.find_element_by_name("pass")
-dsffd.send_keys("asdewqr")
+dsffd.send_keys("asdewqt")
 rrttt = driver.find_element_by_name("login")
 rrttt.click()
 while i <37:
